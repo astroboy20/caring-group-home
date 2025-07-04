@@ -1,12 +1,9 @@
 "use client";
 import { Header } from "@/components/header";
-// import HowCanWeHelp from "@/components/how-can-we-help"
-// import LetsTalkSection from "@/components/lets-talk-section"
-// import DonateSection from "@/components/donate-section"
-// import RecentPosts from "@/components/recent-posts"
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/home-container/hero-section";
 import { HowCanWeHelp } from "@/components/home-container/how-can-we-help";
+import { LetsTalkSection } from "@/components/home-container/lets-talk-section";
 
 export default function HomePage() {
   return (
@@ -15,7 +12,7 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <HowCanWeHelp />
-        {/* <LetsTalkSection /> */}
+        <LetsTalkSection />
         {/* <DonateSection /> */}
         {/* <RecentPosts /> */}
       </main>
