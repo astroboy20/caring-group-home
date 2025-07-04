@@ -56,15 +56,15 @@ const Header = () => {
             <Link href="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#6A1B9A] rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-sm sm:text-lg">
-                  TPC
+                  CGH
                 </span>
               </div>
               <div className="hidden sm:block">
                 <div className="text-[#6A1B9A] font-bold text-base sm:text-lg">
-                  The Providence
+                  A CARING
                 </div>
                 <div className="text-[#6A1B9A] font-bold text-base sm:text-lg">
-                  CENTER
+                  GROUP HOME
                 </div>
               </div>
             </Link>
