@@ -22,7 +22,8 @@ const RecentPosts = () => {
       excerpt:
         "When people think about menopause, the first thing that comes to mind is the hot flashes. But there are many other symptoms to be aware of.",
       image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80",
+        "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+
       category: "Women's Health",
     },
     {
@@ -31,7 +32,7 @@ const RecentPosts = () => {
       excerpt:
         "Mental health is just as important as physical health. Learn about resources and support available in our community.",
       image:
-        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80",
+        "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
       category: "Mental Health",
     },
   ];
@@ -72,7 +73,8 @@ const RecentPosts = () => {
                     src={post.image || "/placeholder.svg"}
                     alt={post.title}
                     fill
-                    className="object-cover"
+                    className="object-cover object-center"
+                    sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
                 <CardContent className="p-4 sm:p-6 flex flex-col h-full">
