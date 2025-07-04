@@ -26,7 +26,7 @@ const LetsTalkSection = () => {
             viewport={{ once: true }}
             className="text-center sm:text-left"
           >
-            <div className="text-blue-400 font-semibold mb-2 text-sm sm:text-base">
+            <div className="text-white font-semibold mb-2 text-sm sm:text-base">
               Let's Talk
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
@@ -45,7 +45,7 @@ const LetsTalkSection = () => {
             >
               <Button
                 size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold w-full sm:w-auto max-w-xs"
+                className="bg-[#6A1B9A] hover:bg-[#6A1B9A]/90 text-white px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold w-full sm:w-auto max-w-xs cursor-pointer"
               >
                 More About Suicide
               </Button>
