@@ -4,6 +4,7 @@ import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/home-container/hero-section";
 import { HowCanWeHelp } from "@/components/home-container/how-can-we-help";
 import { LetsTalkSection } from "@/components/home-container/lets-talk-section";
+import { DonateSection } from "@/components/home-container/donate-section";
 
 export default function HomePage() {
   return (
@@ -13,7 +14,7 @@ export default function HomePage() {
         <HeroSection />
         <HowCanWeHelp />
         <LetsTalkSection />
-        {/* <DonateSection /> */}
+        <DonateSection />
         {/* <RecentPosts /> */}
       </main>
       <Footer />
