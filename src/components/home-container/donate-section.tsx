@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
-const DonateSection =() =>{
+const DonateSection = () => {
   return (
     <section className="relative py-12 sm:py-16 lg:py-20 overflow-hidden">
       {/* Background Image */}
@@ -27,13 +27,15 @@ const DonateSection =() =>{
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
-            Donate Now and Make a Difference
+            Give Hope. Change Lives.
           </h2>
           <p className="text-base sm:text-lg text-gray-700 mb-6 sm:mb-8 max-w-3xl mx-auto px-4 leading-relaxed">
-            You can change the life of someone in need and make a family a little happier and healthier. Your
-            tax-deductible donation helps us to provide the best mental health and substance use care for adults,
-            children, and families in our community.
+            Your support brings healing, stability, and hope to those facing
+            mental health and substance use challenges. Every tax-deductible
+            donation helps us deliver compassionate, life-changing care to
+            children, adults, and families across our community.
           </p>
+
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button
               size="lg"
@@ -45,7 +47,7 @@ const DonateSection =() =>{
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export {DonateSection}
+export { DonateSection };
