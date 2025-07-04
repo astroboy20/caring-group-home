@@ -18,7 +18,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#6A1B9A] text-white">
       {/* Partner Logos */}
-      <div className="border-b border-purple-400/20 py-6 sm:py-8">
+      {/* <div className="border-b border-purple-400/20 py-6 sm:py-8">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 items-center justify-items-center">
             {partnerLogos.map((partner, index) => (
@@ -39,7 +39,7 @@ const Footer = () => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Footer Content */}
       <div className="py-8 sm:py-12">
