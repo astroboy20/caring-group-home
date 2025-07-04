@@ -22,7 +22,7 @@ const RecentPosts = () => {
       excerpt:
         "When people think about menopause, the first thing that comes to mind is the hot flashes. But there are many other symptoms to be aware of.",
       image:
-        "https://images.unsplash.com/photo-1594824804732-5f8fcaf009d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80",
+        "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1888&q=80",
       category: "Women's Health",
     },
     {

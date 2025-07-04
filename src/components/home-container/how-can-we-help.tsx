@@ -22,8 +22,8 @@ const HowCanWeHelp = () => {
       description:
         "The Providence Center's dedicated staff is here to help you navigate your care.",
       color: "text-green-600",
-      bgImage:
-        "https://images.unsplash.com/photo-1520975918314-66d3b6f53fdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+      bgImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+
     },
     {
       icon: User,
