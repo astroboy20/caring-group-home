@@ -33,11 +33,10 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 sm:mb-6 leading-tight"
           >
-            Patient-Centered,{" "}
-            <span className="block">Recovery-Oriented, and</span>
-            <span className="block">Innovative Care</span>
+            Focused on the Patient,
+            <span className="block">Driven by Recovery,</span>
+            <span className="block">Powered by Innovation</span>
           </motion.h1>
-
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
