@@ -37,7 +37,7 @@ const DonateSection =() =>{
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Button
               size="lg"
-              className="bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold shadow-lg w-full sm:w-auto max-w-xs"
+              className="bg-[#6A1B9A] hover:bg-green-700 text-white px-6 sm:px-8 py-3 text-base sm:text-lg font-semibold shadow-lg w-full sm:w-auto max-w-xs"
             >
               Donate Now
             </Button>
