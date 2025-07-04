@@ -69,7 +69,7 @@ const HowCanWeHelp =()=> {
               whileHover={{ y: -5 }}
               className="h-full"
             >
-              <Card className="h-full hover:shadow-lg transition-all duration-300 cursor-pointer overflow-hidden group">
+              <Card className="h-full hover:shadow-lg  transition-all duration-300 cursor-pointer overflow-hidden group">
                 <div className="relative h-24 sm:h-32 overflow-hidden">
                   <Image
                     src={service.bgImage || "/placeholder.svg"}
