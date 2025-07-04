@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { motion } from "framer-motion"
-import { Menu, Phone, MapPin, Globe } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import Link from "next/link"
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { Menu, Phone, MapPin, Globe } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Link from "next/link";
 
-export default function Header() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
     { name: "Find A Provider", href: "/find-provider" },
@@ -17,7 +17,7 @@ export default function Header() {
     { name: "About Us", href: "/about" },
     { name: "Client Resources", href: "/resources" },
     { name: "Contact Us", href: "/contact" },
-  ]
+  ];
 
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
@@ -48,14 +48,24 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
             <Link href="/" className="flex items-center space-x-2">
               <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#6A1B9A] rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm sm:text-lg">TPC</span>
+                <span className="text-white font-bold text-sm sm:text-lg">
+                  TPC
+                </span>
               </div>
               <div className="hidden sm:block">
-                <div className="text-[#6A1B9A] font-bold text-base sm:text-lg">The Providence</div>
-                <div className="text-[#6A1B9A] font-bold text-base sm:text-lg">CENTER</div>
+                <div className="text-[#6A1B9A] font-bold text-base sm:text-lg">
+                  The Providence
+                </div>
+                <div className="text-[#6A1B9A] font-bold text-base sm:text-lg">
+                  CENTER
+                </div>
               </div>
             </Link>
           </motion.div>
@@ -106,7 +116,9 @@ export default function Header() {
                   </motion.div>
                 ))}
                 <div className="pt-4 border-t">
-                  <Button className="w-full bg-[#6A1B9A] hover:bg-[#5A1580]">Emergency Help</Button>
+                  <Button className="w-full bg-[#6A1B9A] hover:bg-[#5A1580]">
+                    Emergency Help
+                  </Button>
                 </div>
               </nav>
             </SheetContent>
@@ -114,5 +126,7 @@ export default function Header() {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
+
+export { Header };
