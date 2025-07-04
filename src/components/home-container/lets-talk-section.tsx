@@ -27,17 +27,19 @@ const LetsTalkSection = () => {
             className="text-center sm:text-left"
           >
             <div className="text-white font-semibold mb-2 text-sm sm:text-base">
-              Let's Talk
+              Start the Conversation
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
-              How We Talk About Suicide Matters
+              The Way We Talk About Suicide Matters
             </h2>
             <p className="text-lg sm:text-xl md:text-2xl text-white/90 mb-6 sm:mb-8 max-w-3xl">
-              Let's face it, suicide is a very difficult topic. And believe it
-              or not, even mental health professionals struggle with how to talk
-              about it. This is why it's so important to bring the discussion of
-              suicide into the open.
+              Suicide is a tough and often uncomfortable subject—but avoiding it
+              doesn’t help. Even mental health professionals sometimes struggle
+              with the right words. That’s why open, honest conversations are
+              essential. Together, we can reduce stigma and support those who
+              need it most.
             </p>
+
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

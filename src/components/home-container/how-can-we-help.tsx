@@ -1,16 +1,17 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { Search, Heart, User, Users } from "lucide-react"
-import Image from "next/image"
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Search, Heart, User, Users } from "lucide-react";
+import Image from "next/image";
 
-const HowCanWeHelp =()=> {
+const HowCanWeHelp = () => {
   const services = [
     {
       icon: Search,
       title: "Find A Provider",
-      description: "Use our provider finder tool to locate the provider who is right for you.",
+      description:
+        "Use our provider finder tool to locate the provider who is right for you.",
       color: "text-blue-600",
       bgImage:
         "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
@@ -18,15 +19,17 @@ const HowCanWeHelp =()=> {
     {
       icon: Heart,
       title: "I'm Seeking Help",
-      description: "The Providence Center's dedicated staff is here to help you navigate your care.",
+      description:
+        "The Providence Center's dedicated staff is here to help you navigate your care.",
       color: "text-green-600",
       bgImage:
-        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+        "https://images.unsplash.com/photo-1520975918314-66d3b6f53fdc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
     },
     {
       icon: User,
       title: "I'm A Client",
-      description: "Our caring compassionate staff will guide you as you make recovery a reality.",
+      description:
+        "Our caring compassionate staff will guide you as you make recovery a reality.",
       color: "text-orange-600",
       bgImage:
         "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
@@ -39,7 +42,7 @@ const HowCanWeHelp =()=> {
       bgImage:
         "https://images.unsplash.com/photo-1559757175-0eb30cd8c063?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
     },
-  ]
+  ];
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
@@ -51,10 +54,14 @@ const HowCanWeHelp =()=> {
           viewport={{ once: true }}
           className="text-center mb-8 sm:mb-12"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">How Can We Help?</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            How Can We Help?
+          </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-4xl mx-auto px-4">
-            The Providence Center helps adults, adolescents, and children affected by psychiatric diseases, emotional
-            problems, and addictions by providing treatment and supportive services within a community setting.
+            The Providence Center helps adults, adolescents, and children
+            affected by psychiatric diseases, emotional problems, and addictions
+            by providing treatment and supportive services within a community
+            setting.
           </p>
         </motion.div>
 
@@ -81,10 +88,16 @@ const HowCanWeHelp =()=> {
                 </div>
                 <CardContent className="p-4 sm:p-6 text-center h-full flex flex-col">
                   <div className="mb-3 sm:mb-4">
-                    <service.icon className={`w-10 h-10 sm:w-12 sm:h-12 mx-auto ${service.color}`} />
+                    <service.icon
+                      className={`w-10 h-10 sm:w-12 sm:h-12 mx-auto ${service.color}`}
+                    />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">{service.title}</h3>
-                  <p className="text-sm sm:text-base text-gray-600 flex-grow leading-relaxed">{service.description}</p>
+                  <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
+                    {service.title}
+                  </h3>
+                  <p className="text-sm sm:text-base text-gray-600 flex-grow leading-relaxed">
+                    {service.description}
+                  </p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -92,7 +105,7 @@ const HowCanWeHelp =()=> {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export {HowCanWeHelp}
+export { HowCanWeHelp };
