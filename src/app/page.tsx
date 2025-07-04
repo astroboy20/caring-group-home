@@ -6,6 +6,7 @@ import { Header } from "@/components/header";
 // import RecentPosts from "@/components/recent-posts"
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/home-container/hero-section";
+import { HowCanWeHelp } from "@/components/home-container/how-can-we-help";
 
 export default function HomePage() {
   return (
@@ -13,10 +14,10 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
-        {/* <HowCanWeHelp />
-        <LetsTalkSection />
-        <DonateSection />
-        <RecentPosts /> */}
+        <HowCanWeHelp />
+        {/* <LetsTalkSection /> */}
+        {/* <DonateSection /> */}
+        {/* <RecentPosts /> */}
       </main>
       <Footer />
     </div>

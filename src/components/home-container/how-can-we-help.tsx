@@ -5,7 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Search, Heart, User, Users } from "lucide-react"
 import Image from "next/image"
 
-export default function HowCanWeHelp() {
+const HowCanWeHelp =()=> {
   const services = [
     {
       icon: Search,
@@ -94,3 +94,5 @@ export default function HowCanWeHelp() {
     </section>
   )
 }
+
+export {HowCanWeHelp}
