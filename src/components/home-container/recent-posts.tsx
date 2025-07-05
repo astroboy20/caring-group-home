@@ -26,15 +26,15 @@ const RecentPosts = () => {
 
       category: "Women's Health",
     },
-    {
-      title:
-        "Understanding Mental Health: Breaking the Stigma and Finding Support",
-      excerpt:
-        "Mental health is just as important as physical health. Learn about resources and support available in our community.",
-      image:
-        "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-      category: "Mental Health",
-    },
+    // {
+    //   title:
+    //     "Understanding Mental Health: Breaking the Stigma and Finding Support",
+    //   excerpt:
+    //     "Mental health is just as important as physical health. Learn about resources and support available in our community.",
+    //   image:
+    //     "https://images.unsplash.com/photo-1607746882042-944635dfe10e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+    //   category: "Mental Health",
+    // },
   ];
 
   return (

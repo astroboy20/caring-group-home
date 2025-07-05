@@ -6,6 +6,8 @@ import Link from "next/link";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
+    const date:Date = new Date()
+    const year = date.getFullYear()
   const partnerLogos = [
     { name: "Care New England", logo: "" },
     { name: "Integra", logo: "" },
@@ -239,7 +241,7 @@ const Footer = () => {
                 </Link>
               </div>
               <p className="text-xs sm:text-sm text-purple-200 text-center sm:text-right">
-                Copyright © 2024 Care New England Health System
+                Copyright ©{year} Care New England Health System
               </p>
             </div>
           </motion.div>

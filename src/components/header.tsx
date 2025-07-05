@@ -36,10 +36,13 @@ const Header = () => {
               </span>
               <span>Donate</span>
             </div>
-            <div className="flex items-center ml-auto">
+            <Link
+              href={"tel:100-000-0000"}
+              className="flex items-center ml-auto"
+            >
               <Phone className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-              <span className="text-xs sm:text-sm">(401) 276-4020</span>
-            </div>
+              <span className="text-xs sm:text-sm">100-000-0000</span>
+            </Link>
           </div>
         </div>
       </div>
