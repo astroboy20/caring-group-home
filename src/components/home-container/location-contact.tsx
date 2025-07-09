@@ -117,7 +117,7 @@ const LocationContact = ()=> {
                       </div>
                       <div>
                         <h4 className="font-medium text-gray-900">Phone</h4>
-                        <p className="text-sm text-gray-600">(401) 276-4020</p>
+                        <p className="text-sm text-gray-600">100-000-0000</p>
                         <p className="text-xs text-gray-500">1-844-TPC-HELP</p>
                       </div>
                     </div>
@@ -200,7 +200,7 @@ const LocationContact = ()=> {
                       value={formData.service}
                       onValueChange={(value) => setFormData({ ...formData, service: value })}
                     >
-                      <SelectTrigger className="border-gray-300 focus:border-[#6A1B9A] focus:ring-[#6A1B9A]">
+                      <SelectTrigger className="border-gray-300 focus:border-[#6A1B9A] focus:ring-[#6A1B9A] w-full">
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                       <SelectContent>
