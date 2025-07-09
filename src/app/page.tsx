@@ -6,6 +6,7 @@ import { HowCanWeHelp } from "@/components/home-container/how-can-we-help";
 import { LetsTalkSection } from "@/components/home-container/lets-talk-section";
 import { DonateSection } from "@/components/home-container/donate-section";
 import { RecentPosts } from "@/components/home-container/recent-posts";
+import { LocationContact } from "@/components/home-container/location-contact";
 
 export default function HomePage() {
   return (
@@ -17,6 +18,7 @@ export default function HomePage() {
         <LetsTalkSection />
         <DonateSection />
         <RecentPosts />
+        <LocationContact/>
       </main>
       <Footer />
     </div>

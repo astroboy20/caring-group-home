@@ -57,9 +57,9 @@ const Header = () => {
             transition={{ duration: 0.5 }}
           >
             <Link href="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-[#6A1B9A] rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 sm:w-14 sm:h-14 bg-[#6A1B9A] rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-sm sm:text-lg">
-                  CGH
+                  ACGH
                 </span>
               </div>
               <div className="hidden sm:block">
