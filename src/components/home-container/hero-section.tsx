@@ -10,7 +10,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/brand-logo.jpg"
+          src="/images/brand-logo-new.jpg"
           alt="Compassionate mental health counseling session"
           fill
           className="object-cover"
