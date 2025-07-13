@@ -14,7 +14,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
-        <HowCanWeHelp />
+        {/* <HowCanWeHelp /> */}
         <LetsTalkSection />
         <DonateSection />
         <RecentPosts />
