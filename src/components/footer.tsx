@@ -6,8 +6,8 @@ import Link from "next/link";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
-    const date:Date = new Date()
-    const year = date.getFullYear()
+  const date: Date = new Date();
+  const year = date.getFullYear();
   const partnerLogos = [
     { name: "Care New England", logo: "" },
     { name: "Integra", logo: "" },
@@ -46,7 +46,7 @@ const Footer = () => {
       {/* Main Footer Content */}
       <div className="py-8 sm:py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="flex flex-col lg:flex-row justify-between gap-6 sm:gap-8">
             {/* Contact Us */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -67,7 +67,7 @@ const Footer = () => {
             </motion.div>
 
             {/* Other Care New England Locations */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
@@ -108,10 +108,10 @@ const Footer = () => {
                   Women & Infants Hospital
                 </Link>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* About Us */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -146,7 +146,7 @@ const Footer = () => {
                   Privacy
                 </Link>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             {/* Get Involved */}
             <motion.div
@@ -178,24 +178,33 @@ const Footer = () => {
                   Volunteer
                 </Link>
               </div>
+            </motion.div>
 
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
               {/* Patients and Visitors */}
-              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 mt-6 sm:mt-8">
-                Patients and Visitors
-              </h3>
-              <div className="space-y-2 text-sm">
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Find A Provider
-                </Link>
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Patient Community Care
-                </Link>
+              <div>
+                <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4 ">
+                  Patients and Visitors
+                </h3>
+                <div className="space-y-2 text-sm">
+                  <Link
+                    href="#"
+                    className="block hover:text-blue-200 transition-colors"
+                  >
+                    Find A Provider
+                  </Link>
+                  <Link
+                    href="#"
+                    className="block hover:text-blue-200 transition-colors"
+                  >
+                    Patient Community Care
+                  </Link>
+                </div>
               </div>
             </motion.div>
           </div>
@@ -251,4 +260,4 @@ const Footer = () => {
   );
 };
 
-export {Footer}
+export { Footer };
