@@ -6,7 +6,13 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden">
+    <motion.section
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.6 }}
+      viewport={{ once: true }}
+      className="relative min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden"
+    >
       {/* Background Image */}
       <div className=" inset-0 z-0">
         <Image
@@ -20,8 +26,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-    
-    </section>
+    </motion.section>
   );
 };
 
