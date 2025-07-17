@@ -7,6 +7,7 @@ import { LetsTalkSection } from "@/components/home-container/lets-talk-section";
 import { DonateSection } from "@/components/home-container/donate-section";
 import { RecentPosts } from "@/components/home-container/recent-posts";
 import { LocationContact } from "@/components/home-container/location-contact";
+import { HeroContent } from "@/components/home-container/hero-content";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <HeroContent/>
         {/* <HowCanWeHelp /> */}
         <LetsTalkSection />
         <DonateSection />
