@@ -38,15 +38,15 @@ const HeroContent = () => {
                 size="lg"
                 className="w-full sm:w-auto bg-[#6A1B9A] hover:bg-[#5A1580] text-white px-8 py-3 text-base font-semibold transition-all duration-200 transform hover:scale-105"
               >
-                Schedule An Appointment
+                Schedule An Tour
               </Button>
-              <Button
+              {/* <Button
                 size="lg"
                 variant="outline"
                 className="w-full sm:w-auto border-2 border-[#6A1B9A] text-[#6A1B9A] hover:bg-[#6A1B9A] hover:text-white px-8 py-3 text-base font-semibold transition-all duration-200 transform hover:scale-105 bg-white"
               >
                 Find A Provider
-              </Button>
+              </Button> */}
             </motion.div>
 
             {/* About Section */}

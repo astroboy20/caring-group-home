@@ -8,45 +8,13 @@ import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 const Footer = () => {
   const date: Date = new Date();
   const year = date.getFullYear();
-  const partnerLogos = [
-    { name: "Care New England", logo: "" },
-    { name: "Integra", logo: "" },
-    { name: "Kent Hospital", logo: "" },
-    { name: "The Providence Center", logo: "" },
-    { name: "VNA", logo: "" },
-    { name: "Women & Infants", logo: "" },
-  ];
 
   return (
     <footer className="bg-[#6A1B9A] text-white">
-      {/* Partner Logos */}
-      {/* <div className="border-b border-purple-400/20 py-6 sm:py-8">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 items-center justify-items-center">
-            {partnerLogos.map((partner, index) => (
-              <motion.div
-                key={partner.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="hover:scale-105 transition-all duration-300"
-              >
-                <div className="h-10 sm:h-12 w-24 sm:w-32 bg-white/10 rounded-lg flex items-center justify-center hover:bg-white/20 transition-colors">
-                  <span className="text-white/80 text-xs sm:text-sm font-medium text-center px-2">
-                    {partner.name}
-                  </span>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </div> */}
-
       {/* Main Footer Content */}
       <div className="py-8 sm:py-12">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col lg:flex-row justify-between gap-6 sm:gap-8">
+          <div className="flex flex-col lg:flex-row lg:justify-center lg:items-start gap-6 sm:gap-8 w-full  ">
             {/* Contact Us */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -59,124 +27,10 @@ const Footer = () => {
               </h3>
               <div className="space-y-2 text-sm">
                 <p>Send Us A Message</p>
-                <p className="font-medium">1-844-TPC-HELP</p>
-                <p className="text-xs sm:text-sm">(1-844-872-4357)</p>
-                <p>528 North Main Street</p>
-                <p>Providence, RI 02904</p>
-              </div>
-            </motion.div>
-
-            {/* Other Care New England Locations */}
-            {/* <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
-                Other Care New England Locations
-              </h3>
-              <div className="space-y-2 text-sm">
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Care New England
-                </Link>
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Butler Hospital
-                </Link>
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Kent Hospital
-                </Link>
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  VNA of Care New England
-                </Link>
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Women & Infants Hospital
-                </Link>
-              </div>
-            </motion.div> */}
-
-            {/* About Us */}
-            {/* <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
-                About Us
-              </h3>
-              <div className="space-y-2 text-sm">
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Who We Are
-                </Link>
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Newsroom & Events
-                </Link>
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  In the News
-                </Link>
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Privacy
-                </Link>
-              </div>
-            </motion.div> */}
-
-            {/* Get Involved */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="text-base sm:text-lg font-semibold mb-3 sm:mb-4">
-                Get Involved
-              </h3>
-              <div className="space-y-2 text-sm">
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Ways to Give
-                </Link>
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Careers
-                </Link>
-                <Link
-                  href="#"
-                  className="block hover:text-blue-200 transition-colors"
-                >
-                  Volunteer
-                </Link>
+                <p className="font-medium">100-TPC-HELP</p>
+                <p className="text-xs sm:text-sm">100-000-0000</p>
+                <p>1632 Chalkstone Avenue </p>
+                <p>Providence, RI 02909</p>
               </div>
             </motion.div>
 
@@ -196,13 +50,7 @@ const Footer = () => {
                     href="#"
                     className="block hover:text-blue-200 transition-colors"
                   >
-                    Find A Provider
-                  </Link>
-                  <Link
-                    href="#"
-                    className="block hover:text-blue-200 transition-colors"
-                  >
-                    Patient Community Care
+                    Schedule a Tour
                   </Link>
                 </div>
               </div>
@@ -250,7 +98,7 @@ const Footer = () => {
                 </Link>
               </div>
               <p className="text-xs sm:text-sm text-purple-200 text-center sm:text-right">
-                Copyright ©{year} Care New England Health System
+                Copyright ©{year} A Caring Group Home
               </p>
             </div>
           </motion.div>

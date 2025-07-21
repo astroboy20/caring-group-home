@@ -1,19 +1,25 @@
-"use client"
+"use client";
 
-import type React from "react"
+import type React from "react";
 
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Checkbox } from "@/components/ui/checkbox"
-import { MapPin, Phone, Mail, Clock, ExternalLink } from "lucide-react"
-import { useState } from "react"
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { Checkbox } from "@/components/ui/checkbox";
+import { MapPin, Phone, Mail, Clock, ExternalLink } from "lucide-react";
+import { useState } from "react";
 
-const LocationContact = ()=> {
+const LocationContact = () => {
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -21,7 +27,7 @@ const LocationContact = ()=> {
     service: "",
     message: "",
     requestTour: false,
-  })
+  });
 
   const services = [
     "Mental Health Services",
@@ -33,13 +39,13 @@ const LocationContact = ()=> {
     "Peer Recovery Support",
     "Housing Services",
     "Employment Services",
-  ]
+  ];
 
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
+    e.preventDefault();
     // Handle form submission
-    console.log("Form submitted:", formData)
-  }
+    console.log("Form submitted:", formData);
+  };
 
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
@@ -51,9 +57,12 @@ const LocationContact = ()=> {
           viewport={{ once: true }}
           className="text-center mb-8 sm:mb-12"
         >
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">Location & Contact</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            Location & Contact
+          </h2>
           <p className="text-base sm:text-lg text-gray-600 max-w-3xl mx-auto">
-            Get in touch with us or visit our main location. We're here to help you on your journey to wellness.
+            Get in touch with us or visit our main location. We're here to help
+            you on your journey to wellness.
           </p>
         </motion.div>
 
@@ -94,15 +103,17 @@ const LocationContact = ()=> {
                       <MapPin className="w-6 h-6 text-[#6A1B9A]" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-semibold text-gray-900 mb-2">Main Location</h3>
+                      <h3 className="font-semibold text-gray-900 mb-2">
+                        Main Location
+                      </h3>
                       <p className="text-gray-600 mb-2">
-                        528 North Main Street
+                        1632 Chalkstone Avenue
                         <br />
-                        Providence, RI 02904
+                        Providence, RI 02909
                       </p>
-                      <Button variant="link" className="text-[#6A1B9A] hover:text-[#5A1580] p-0 h-auto font-medium">
+                      {/* <Button variant="link" className="text-[#6A1B9A] hover:text-[#5A1580] p-0 h-auto font-medium">
                         Get Directions <ExternalLink className="w-4 h-4 ml-1" />
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                 </CardContent>
@@ -118,7 +129,6 @@ const LocationContact = ()=> {
                       <div>
                         <h4 className="font-medium text-gray-900">Phone</h4>
                         <p className="text-sm text-gray-600">100-000-0000</p>
-                        <p className="text-xs text-gray-500">1-844-TPC-HELP</p>
                       </div>
                     </div>
                   </CardContent>
@@ -132,8 +142,12 @@ const LocationContact = ()=> {
                       </div>
                       <div>
                         <h4 className="font-medium text-gray-900">Hours</h4>
-                        <p className="text-sm text-gray-600">Mon-Fri: 8AM-6PM</p>
-                        <p className="text-xs text-gray-500">24/7 Crisis Line</p>
+                        <p className="text-sm text-gray-600">
+                          Mon-Fri: 8AM-6PM
+                        </p>
+                        <p className="text-xs text-gray-500">
+                          24/7 Crisis Line
+                        </p>
                       </div>
                     </div>
                   </CardContent>
@@ -151,9 +165,14 @@ const LocationContact = ()=> {
           >
             <Card>
               <CardContent className="p-6 sm:p-8">
-                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-6">Send Us a Message</h3>
+                <h3 className="text-xl sm:text-2xl font-semibold text-gray-900 mb-6">
+                  Send Us a Message
+                </h3>
 
-                <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-4 sm:space-y-6"
+                >
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="name">Name *</Label>
@@ -162,7 +181,9 @@ const LocationContact = ()=> {
                         type="text"
                         placeholder="Your full name"
                         value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, name: e.target.value })
+                        }
                         required
                         className="border-gray-300 focus:border-[#6A1B9A] focus:ring-[#6A1B9A]"
                       />
@@ -175,7 +196,9 @@ const LocationContact = ()=> {
                         type="tel"
                         placeholder="(401) 555-0123"
                         value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                        onChange={(e) =>
+                          setFormData({ ...formData, phone: e.target.value })
+                        }
                         className="border-gray-300 focus:border-[#6A1B9A] focus:ring-[#6A1B9A]"
                       />
                     </div>
@@ -188,7 +211,9 @@ const LocationContact = ()=> {
                       type="email"
                       placeholder="your.email@example.com"
                       value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, email: e.target.value })
+                      }
                       required
                       className="border-gray-300 focus:border-[#6A1B9A] focus:ring-[#6A1B9A]"
                     />
@@ -198,7 +223,9 @@ const LocationContact = ()=> {
                     <Label htmlFor="service">Service of Interest</Label>
                     <Select
                       value={formData.service}
-                      onValueChange={(value) => setFormData({ ...formData, service: value })}
+                      onValueChange={(value) =>
+                        setFormData({ ...formData, service: value })
+                      }
                     >
                       <SelectTrigger className="border-gray-300 focus:border-[#6A1B9A] focus:ring-[#6A1B9A] w-full">
                         <SelectValue placeholder="Select a service" />
@@ -219,7 +246,9 @@ const LocationContact = ()=> {
                       id="message"
                       placeholder="Tell us how we can help you..."
                       value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      onChange={(e) =>
+                        setFormData({ ...formData, message: e.target.value })
+                      }
                       rows={4}
                       className="border-gray-300 focus:border-[#6A1B9A] focus:ring-[#6A1B9A] resize-none"
                     />
@@ -229,10 +258,18 @@ const LocationContact = ()=> {
                     <Checkbox
                       id="tour"
                       checked={formData.requestTour}
-                      onCheckedChange={(checked:any) => setFormData({ ...formData, requestTour: checked as boolean })}
+                      onCheckedChange={(checked: any) =>
+                        setFormData({
+                          ...formData,
+                          requestTour: checked as boolean,
+                        })
+                      }
                       className="border-gray-300 data-[state=checked]:bg-[#6A1B9A] data-[state=checked]:border-[#6A1B9A]"
                     />
-                    <Label htmlFor="tour" className="text-sm text-gray-600 cursor-pointer">
+                    <Label
+                      htmlFor="tour"
+                      className="text-sm text-gray-600 cursor-pointer"
+                    >
                       I'd like to schedule a facility tour
                     </Label>
                   </div>
@@ -248,8 +285,11 @@ const LocationContact = ()=> {
 
                 <div className="mt-6 pt-6 border-t border-gray-200">
                   <p className="text-sm text-gray-500 text-center">
-                    For immediate assistance or crisis support, please call our 24/7 helpline at{" "}
-                    <span className="font-medium text-[#6A1B9A]">1-844-TPC-HELP</span>
+                    For immediate assistance or crisis support, please call our
+                    24/7 helpline at{" "}
+                    <span className="font-medium text-[#6A1B9A]">
+                    100-000-0000
+                    </span>
                   </p>
                 </div>
               </CardContent>
@@ -258,8 +298,7 @@ const LocationContact = ()=> {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-
-export {LocationContact}
+export { LocationContact };
