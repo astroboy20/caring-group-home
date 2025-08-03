@@ -27,8 +27,8 @@ const Footer = () => {
               </h3>
               <div className="space-y-2 text-sm">
                 <p>Send Us A Message</p>
-                <p className="font-medium">100-TPC-HELP</p>
-                <p className="text-xs sm:text-sm">100-000-0000</p>
+                <p className="font-medium">ACGH</p>
+                <p className="text-xs sm:text-sm">000-000-0000</p>
                 <p>1632 Chalkstone Avenue </p>
                 <p>Providence, RI 02909</p>
               </div>

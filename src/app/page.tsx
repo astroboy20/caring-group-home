@@ -17,9 +17,9 @@ export default function HomePage() {
         <HeroSection />
         <HeroContent/>
         {/* <HowCanWeHelp /> */}
-        <LetsTalkSection />
+        {/* <LetsTalkSection />
         <DonateSection />
-        <RecentPosts />
+        <RecentPosts /> */}
         <LocationContact/>
       </main>
       <Footer />

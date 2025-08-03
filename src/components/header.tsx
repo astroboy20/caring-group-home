@@ -25,7 +25,7 @@ const Header = () => {
       <div className="bg-[#6A1B9A] text-white py-2">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center text-xs sm:text-sm">
-            <div className="hidden sm:flex items-center space-x-4">
+            {/* <div className="hidden sm:flex items-center space-x-4">
               <span className="flex items-center">
                 <Globe className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
                 Select Language
@@ -35,13 +35,13 @@ const Header = () => {
                 Careers
               </span>
               <span>Donate</span>
-            </div>
+            </div> */}
             <Link
               href={"tel:100-000-0000"}
               className="flex items-center ml-auto"
             >
               <Phone className="w-3 h-3 sm:w-4 sm:h-4 mr-1" />
-              <span className="text-xs sm:text-sm">100-000-0000</span>
+              <span className="text-xs sm:text-sm">000-000-0000</span>
             </Link>
           </div>
         </div>

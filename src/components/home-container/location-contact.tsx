@@ -128,7 +128,7 @@ const LocationContact = () => {
                       </div>
                       <div>
                         <h4 className="font-medium text-gray-900">Phone</h4>
-                        <p className="text-sm text-gray-600">100-000-0000</p>
+                        <p className="text-sm text-gray-600">000-000-0000</p>
                       </div>
                     </div>
                   </CardContent>
@@ -194,7 +194,7 @@ const LocationContact = () => {
                       <Input
                         id="phone"
                         type="tel"
-                        placeholder="(401) 555-0123"
+                        placeholder="000-000-0000"
                         value={formData.phone}
                         onChange={(e) =>
                           setFormData({ ...formData, phone: e.target.value })
@@ -288,7 +288,7 @@ const LocationContact = () => {
                     For immediate assistance or crisis support, please call our
                     24/7 helpline at{" "}
                     <span className="font-medium text-[#6A1B9A]">
-                    100-000-0000
+                      000-000-0000
                     </span>
                   </p>
                 </div>

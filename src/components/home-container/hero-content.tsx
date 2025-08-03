@@ -64,7 +64,7 @@ const HeroContent = () => {
                 <div className="bg-[#6A1B9A]/5 border-l-4 border-[#6A1B9A] p-4 rounded-r-lg mt-6">
                   <p className="text-base font-medium text-gray-800">
                     Call us at{" "}
-                    <Link href={"tel:100-000-0000"}>100-000-0000</Link> to
+                    <Link href={"tel:100-000-0000"}>000-000-0000</Link> to
                     schedule an appointment for your and learn more
                     about our services
                   </p>
