@@ -8,6 +8,7 @@ import { DonateSection } from "@/components/home-container/donate-section";
 import { RecentPosts } from "@/components/home-container/recent-posts";
 import { LocationContact } from "@/components/home-container/location-contact";
 import { HeroContent } from "@/components/home-container/hero-content";
+import BrandImage from "@/components/home-container/brand-image";
 
 export default function HomePage() {
   return (
@@ -15,6 +16,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
+        <BrandImage/>
         <HeroContent/>
         {/* <HowCanWeHelp /> */}
         {/* <LetsTalkSection />
