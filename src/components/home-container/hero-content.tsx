@@ -3,17 +3,20 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import BrandImage from "./brand-image";
+import Image from "next/image";
 
 const HeroContent = () => {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto lg:ml-0 lg:mr-auto text-left">
+    <section className="py-16 sm:py-20 lg:py-24 bg-gray-50 ">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 ">
+        <div className="max-w-4xl mx-auto lg:ml-0 lg:mr-auto text-left   w-full">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
+            className="w-full  "
           >
             {/* Main Heading */}
             <motion.h2
@@ -26,13 +29,34 @@ const HeroContent = () => {
               Welcome to A Caring Group home
             </motion.h2>
 
+            <motion.section
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              className="relative min-h-[500px] md:min-h-[600px] lg:min-h-[700px] flex items-center justify-center overflow-hidden w-full"
+            >
+              {/* Background Image */}
+              <div className=" inset-0 z-0">
+                <Image
+                  src="/images/brand-image.jpg"
+                  alt="Compassionate mental health counseling session"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                {/* <div className="absolute inset-0 bg-black/50" /> */}
+              </div>
+
+              {/* Content */}
+            </motion.section>
+
             {/* CTA Buttons */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="flex flex-col sm:flex-row gap-4 items-start mb-12 max-w-lg"
+              className="flex flex-col sm:flex-row gap-4 items-start mb-12 max-w-lg mt-8"
             >
               <Button
                 size="lg"

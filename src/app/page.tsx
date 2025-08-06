@@ -16,7 +16,7 @@ export default function HomePage() {
       <Header />
       <main>
         <HeroSection />
-        <BrandImage/>
+        {/* <BrandImage/> */}
         <HeroContent/>
         {/* <HowCanWeHelp /> */}
         {/* <LetsTalkSection />
